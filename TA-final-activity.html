@@ -13,7 +13,7 @@
       <div class="row spacer"></div>
       <div class="row toggle">
         <div class="col">
-          <p class="dark">DARK MODE</p>
+          <p class="">DARK MODE</p>
         </div>
         <label class="switch col">
           <input type="checkbox" id="theme-switcher" />
@@ -34,12 +34,12 @@
       themeSwitcher.addEventListener("click", function() {
         if (mode === "dark") {
           mode = "light";
-          container.setAttribute("light");
+          container.setAttribute("class","light");
         }
 
         else {
           mode = "dark";
-          container.setAttribute("dark");
+          container.setAttribute("class","dark");
         }
       });
     </script>
